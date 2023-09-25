@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>HTML Form</title>
+</head>
+<body>
+    <div id="form-container">
+        <h1>Travel Destination Survey</h1>
+        <form id="form">
+            <div id="form1">
+            <h2>Personal Details</h2>
+            <label for="fName">First Name: <span>*</span></label>
+            <input type="text" id="fName" placeholder="First Name">
+            <label for="lName">Last Name: <span>*</span></label>
+            <input type="text" id="lName" placeholder="Last Name">
+            <label for="email">Email Address: <span>*</span></label>
+            <input type="email" id="email" placeholder="Email Address">
+            </div>
+
+            <div id="form2">
+            <h2>Travel Preferences</h2>
+            <label>Select your type of Vacation: <span>*</span></label>
+            <select>
+                <option id="beach">Beach</option>
+                <option id="mountains">Mountains</option>
+                <option id="city">City</option>
+                <option id="otherVacation">Other</option>
+            </select>
+            <label>Select your preferred Season: <span>*</span></label>
+            <select>
+                <option id="spring">Spring</option>
+                <option id="summer">Summer</option>
+                <option id="fall">Fall</option>
+                <option id="winter">Winter</option>
+            </select>
+            </div>
+
+            <div id="form3">
+            <h2>Destination Preferences</h2>
+            <label>Select the region you want to visit: <span>*</span></label>
+            <select>
+                <option id="mountains">Africa</option>
+                <option id="mountains">Asia</option>
+                <option id="beach">Europe</option>
+                <option id="city">North America</option>
+                <option id="otherVacation">Oceania</option>
+                <option id="otherVacation">South America</option>
+            </select>
+            <label>Top 3 places that you want to visit: <span>*</span></label>
+            <textarea placeholder="Enter the places you want to visit..."></textarea>
+            <label>Additional Comments:</label>
+            <textarea placeholder="Comment here..."></textarea>
+            <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
