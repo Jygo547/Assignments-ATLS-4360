@@ -1,4 +1,49 @@
 html {
     font-family: 'Open Sans', 'Montserrat', 'Nunito', 'Arial';
     font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(236, 236, 236);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#form-container {
+    background-color: white;
+    padding: 50px;
+    max-width: 40%;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(172, 172, 172, 0.55);
+}
+
+h1 {
+    text-align: center;
+    margin:  0 0 10px 0;
+}
+
+#form1, #form2, #form3 {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, select {
+    padding: 10px 0;
+}
+
+input, textarea, select {
+    margin-bottom: 10px;
+    text-indent: 10px;
+    font-size: 1rem;
+}
+
+span {
+    color: red;
+}
+
+label {
+    font-weight: bold;
 }

@@ -14,24 +14,26 @@
             <div id="form1">
             <h2>Personal Details</h2>
             <label for="fName">First Name: <span>*</span></label>
-            <input type="text" id="fName" placeholder="First Name">
+            <input type="text" id="fName" placeholder="First Name" required>
             <label for="lName">Last Name: <span>*</span></label>
-            <input type="text" id="lName" placeholder="Last Name">
+            <input type="text" id="lName" placeholder="Last Name" required>
             <label for="email">Email Address: <span>*</span></label>
-            <input type="email" id="email" placeholder="Email Address">
+            <input type="email" id="email" placeholder="Email Address" required>
+            <label for="number">Phone Number: <span>*</span></label>
+            <input type="tel" id="number" placeholder="+1 (___) - ___ ____" required>
             </div>
 
             <div id="form2">
             <h2>Travel Preferences</h2>
-            <label>Select your type of Vacation: <span>*</span></label>
-            <select>
+            <label for="vacation">Select your type of Vacation: <span>*</span></label>
+            <select id="vacation" required>
                 <option id="beach">Beach</option>
                 <option id="mountains">Mountains</option>
                 <option id="city">City</option>
                 <option id="otherVacation">Other</option>
             </select>
-            <label>Select your preferred Season: <span>*</span></label>
-            <select>
+            <label for="season">Select your preferred Season: <span>*</span></label>
+            <select id="season" required>
                 <option id="spring">Spring</option>
                 <option id="summer">Summer</option>
                 <option id="fall">Fall</option>
@@ -41,20 +43,20 @@
 
             <div id="form3">
             <h2>Destination Preferences</h2>
-            <label>Select the region you want to visit: <span>*</span></label>
-            <select>
-                <option id="mountains">Africa</option>
-                <option id="mountains">Asia</option>
-                <option id="beach">Europe</option>
-                <option id="city">North America</option>
-                <option id="otherVacation">Oceania</option>
-                <option id="otherVacation">South America</option>
+            <label for="destination">Select the region you want to visit: <span>*</span></label>
+            <select id="destination" required>
+                <option id="africa">Africa</option>
+                <option id="asia">Asia</option>
+                <option id="europe">Europe</option>
+                <option id="nAmerica">North America</option>
+                <option id="oceania">Oceania</option>
+                <option id="sAmerica">South America</option>
             </select>
-            <label>Top 3 places that you want to visit: <span>*</span></label>
-            <textarea placeholder="Enter the places you want to visit..."></textarea>
-            <label>Additional Comments:</label>
-            <textarea placeholder="Comment here..."></textarea>
-            <button type="submit">Submit</button>
+            <label for="places">Top 3 places that you want to visit: <span>*</span></label>
+            <textarea id="places" placeholder="Enter the places you want to visit..." required></textarea>
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" placeholder="Comment here..."></textarea>
+            <button id="submit">Submit</button>
             </div>
         </form>
     </div>
