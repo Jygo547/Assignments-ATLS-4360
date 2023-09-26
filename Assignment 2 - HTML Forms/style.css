@@ -1,49 +1,86 @@
-html {
-    font-family: 'Open Sans', 'Montserrat', 'Nunito', 'Arial';
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(236, 236, 236);
-}
+/* style.css */
 
 body {
+    font-family: 'Open Sans', 'Montserrat', 'Nunito';
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    background-image: url("/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#form-container {
-    background-color: white;
-    padding: 50px;
-    max-width: 40%;
-    margin: 30px auto;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgb(172, 172, 172, 0.55);
+#form-container, #success {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 40px;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#success {
+    display: none;
 }
 
 h1 {
+    color: royalblue;
     text-align: center;
-    margin:  0 0 10px 0;
 }
 
-#form1, #form2, #form3 {
-    display: flex;
-    flex-direction: column;
+form {
+    margin-top: 20px;
+    width: 100%;
 }
 
-label, input, select {
+div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
     padding: 10px 0;
-}
-
-input, textarea, select {
     margin-bottom: 10px;
     text-indent: 10px;
-    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 span {
     color: red;
 }
 
-label {
-    font-weight: bold;
+p {
+    line-height: 40px;
+    font-size: 1.1rem;
 }
