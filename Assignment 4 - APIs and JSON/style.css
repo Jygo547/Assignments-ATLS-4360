@@ -1,0 +1,75 @@
+html {
+    font-family: 'Open Sans', 'Montserrat', 'Nunito';
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://wallpaperaccess.com/thumb/4662142.jpg");
+    background-size: repeat;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    width: 100%;
+    color: white;
+    background-color: rgba(39,39,47);
+    margin: 0 0 40px 0;
+    position: fixed;
+}
+
+#apiLink {
+    padding: 10px 20px;
+    background-color: #FD4556;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 60px;
+    margin-right: 10px;
+}
+
+main {
+    padding: 140px 30px 40px 30px;
+}
+
+#list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.icon {
+    width: 100px;
+}
+
+.listItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(225, 243, 230);
+    box-shadow: 0 0 12px rgb(0, 0, 0, 0.15);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.listItem p {
+    padding: 0 0 0 20px;
+    margin: 10px;
+}
